@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Zone Tours — Kerala, Goa &amp; Mumbai | Alhabib Travels</title>
+  <meta
+    name="description"
+    content="Discover South &amp; Coastal India with Alhabib Travels: Kerala backwaters &amp; Munnar, Goa beaches &amp; heritage, and Mumbai &amp; Mahabaleshwar itineraries."
+  />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="south">
+  <div id="site-top-shell"></div>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img
+          src="assets/images/banner-south-warangal.jpg"
+          alt="Historic Kakatiya Stone Gateway — South Zone India Tours"
+          class="page-hero__img"
+          style="object-position: center 45%;"
+          fetchpriority="high"
+        />
+        <div class="page-hero__scrim"></div>
+      </div>
+      <div class="container page-hero__content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>180° South Zone</span>
+        </div>
+        <h1 class="page-hero__title">South <em>Zone</em></h1>
+        <p class="page-hero__lead">
+          Framed between the Western and Eastern Ghats tapering into the Indian Ocean, Arabian Sea, and Bay of Bengal—experience emerald backwaters, Ayurvedic wellness, sun-kissed beaches, centuries-old temple architecture, and coastal culture.
+        </p>
+      </div>
+    </section>
+
+    <!-- Zone Sub-navigation -->
+    <div id="zone-subnav-mount"></div>
+
+    <!-- South Zone Destinations -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">180° South · Regional Destinations</span>
+            <h2 class="section-title">Backwaters, Coastlines &amp; <em>Tea Hills</em></h2>
+          </div>
+          <p class="section-subtitle">
+            Explore Kerala, Goa, and Mumbai &amp; Maharashtra. Click <strong>Full Guide &amp; Routes</strong> for curated sightseeing highlights and itineraries.
+          </p>
+        </div>
+
+        <div class="destination-grid" id="destination-grid" data-zone-key="south"></div>
+      </div>
+    </section>
+
+    <!-- Detailed Places You Can Visit -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Destination Highlights</span>
+            <h2 class="section-title">Places You Can <em>Visit</em> in the South</h2>
+          </div>
+        </div>
+
+        <div class="info-grid-3" id="zone-places-breakdown" data-zone-key="south"></div>
+      </div>
+    </section>
+
+    <!-- South Zone Regional Itineraries -->
+    <section class="section" id="zone-tours">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Kerala · Goa · Mumbai &amp; Maharashtra</span>
+            <h2 class="section-title">South Zone <em>Itineraries</em></h2>
+          </div>
+          <p class="section-subtitle">
+            Browse all 9 curated South &amp; Coastal India itineraries below and enquire in a single click.
+          </p>
+        </div>
+
+        <div class="itinerary-controls itinerary-controls--3col">
+          <input
+            type="search"
+            id="tour-search-input"
+            class="control-input"
+            placeholder="Search South tours or places (e.g. Munnar, Backwaters, Thekkady, Goa, Mahabaleshwar)..."
+            aria-label="Search South Zone itineraries"
+          />
+          <select id="tour-days-select" class="control-select" aria-label="Filter by Number of Days">
+            <option value="all">All Durations (3 – 5 Days)</option>
+            <option value="3-4">03 – 04 Days</option>
+            <option value="5">05 Days</option>
+          </select>
+          <button type="button" class="btn btn--outline" id="tour-reset-btn">Reset</button>
+        </div>
+
+        <div class="tour-table-wrap">
+          <table class="tour-table">
+            <thead>
+              <tr>
+                <th>Tour Name</th>
+                <th>Destination</th>
+                <th>Duration</th>
+                <th>Pick Up / Drop</th>
+                <th>Route &amp; Stay Summary</th>
+                <th style="text-align:right;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tour-table-body" data-fixed-zone="South"></tbody>
+          </table>
+          <div class="tour-table__pagination">
+            <span id="tour-count-text"></span>
+            <a href="packages.html#itineraries" class="link-action">View All Regional Itineraries →</a>
+          </div>
+        </div>
+
+        <div class="cta-banner" style="margin-top:clamp(2.5rem, 5vw, 3.75rem);">
+          <div>
+            <span class="eyebrow" style="color:var(--accent-gold-light); margin-bottom:0.35rem;">Tailored Coastal Holidays</span>
+            <h3 style="font-family:var(--font-display); font-size:clamp(1.7rem, 3vw, 2.3rem); color:#fff;">
+              Planning a Kerala Houseboat Escape or Goa Family Holiday?
+            </h3>
+          </div>
+          <button type="button" class="btn btn--primary" data-enquire-item="Custom South Zone Holiday (Kerala / Goa / Mumbai)">
+            Customize South Tour →
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-bottom-shell"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

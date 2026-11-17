@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West Zone Tours — Udaipur, Gujarat &amp; Chhattisgarh | Alhabib Travels</title>
+  <meta
+    name="description"
+    content="Explore West &amp; Central India with Alhabib Travels: Udaipur island palaces, Gujarat Rann of Kutch, Diu &amp; Dwarka, and Chhattisgarh waterfalls."
+  />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="west">
+  <div id="site-top-shell"></div>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img
+          src="assets/images/banner-west-gateway.jpg"
+          alt="Gateway of India overlooking the Arabian Sea — West Zone India Tours"
+          class="page-hero__img"
+          style="object-position: center 44%;"
+          fetchpriority="high"
+        />
+        <div class="page-hero__scrim"></div>
+      </div>
+      <div class="container page-hero__content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>270° West Zone</span>
+        </div>
+        <h1 class="page-hero__title">West <em>Zone</em></h1>
+        <p class="page-hero__lead">
+          A tapestry of unforgettable contrasts—from the moonlit white salt marshes of the Great Rann of Kutch, sacred Dwarka, and Gir’s Asiatic lions to Udaipur’s shimmering island palaces and Chitrakote’s thunderous horseshoe falls.
+        </p>
+      </div>
+    </section>
+
+    <!-- Zone Sub-navigation -->
+    <div id="zone-subnav-mount"></div>
+
+    <!-- West Zone Destinations -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">270° West · Regional Destinations</span>
+            <h2 class="section-title">Royal Lakes, Salt Deserts &amp; <em>Waterfalls</em></h2>
+          </div>
+          <p class="section-subtitle">
+            Explore Udaipur, Gujarat, and Chhattisgarh—each accompanied by authentic destination guides and ready-to-book multi-day itineraries.
+          </p>
+        </div>
+
+        <div class="destination-grid" id="destination-grid" data-zone-key="west"></div>
+      </div>
+    </section>
+
+    <!-- Detailed Places You Can Visit -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Destination Highlights</span>
+            <h2 class="section-title">Places You Can <em>Visit</em> in the West</h2>
+          </div>
+        </div>
+
+        <div class="info-grid-3" id="zone-places-breakdown" data-zone-key="west"></div>
+      </div>
+    </section>
+
+    <!-- West Zone Regional Itineraries -->
+    <section class="section" id="zone-tours">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Udaipur · Gujarat · Chhattisgarh</span>
+            <h2 class="section-title">West Zone <em>Itineraries</em></h2>
+          </div>
+          <p class="section-subtitle">
+            Filter all 9 curated West Zone itineraries below or enquire for customized group departures.
+          </p>
+        </div>
+
+        <div class="itinerary-controls itinerary-controls--3col">
+          <input
+            type="search"
+            id="tour-search-input"
+            class="control-input"
+            placeholder="Search West tours or places (e.g. Udaipur, Kumbhalgarh, Dwarka, Diu, Chitrakote)..."
+            aria-label="Search West Zone itineraries"
+          />
+          <select id="tour-days-select" class="control-select" aria-label="Filter by Number of Days">
+            <option value="all">All Durations (3 – 5 Days)</option>
+            <option value="3-4">03 – 04 Days</option>
+            <option value="5">05 Days</option>
+          </select>
+          <button type="button" class="btn btn--outline" id="tour-reset-btn">Reset</button>
+        </div>
+
+        <div class="tour-table-wrap">
+          <table class="tour-table">
+            <thead>
+              <tr>
+                <th>Tour Name</th>
+                <th>Destination</th>
+                <th>Duration</th>
+                <th>Pick Up / Drop</th>
+                <th>Route &amp; Stay Summary</th>
+                <th style="text-align:right;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tour-table-body" data-fixed-zone="West"></tbody>
+          </table>
+          <div class="tour-table__pagination">
+            <span id="tour-count-text"></span>
+            <a href="packages.html#itineraries" class="link-action">View All Regional Itineraries →</a>
+          </div>
+        </div>
+
+        <div class="cta-banner" style="margin-top:clamp(2.5rem, 5vw, 3.75rem);">
+          <div>
+            <span class="eyebrow" style="color:var(--accent-gold-light); margin-bottom:0.35rem;">Custom West India Journeys</span>
+            <h3 style="font-family:var(--font-display); font-size:clamp(1.7rem, 3vw, 2.3rem); color:#fff;">
+              Planning Rann of Kutch, Dwarka, Udaipur, or Bastar Waterfalls?
+            </h3>
+          </div>
+          <button type="button" class="btn btn--primary" data-enquire-item="Custom West Zone Holiday (Udaipur / Gujarat / Chhattisgarh)">
+            Customize West Tour →
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-bottom-shell"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

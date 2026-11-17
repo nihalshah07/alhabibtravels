@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alhabib Travels | Trusted Kashmir &amp; All-India Tour Agency Since 1997</title>
+  <meta
+    name="description"
+    content="Alhabib Travels (originally founded as YIR Holidays in 1997) offers curated Jammu &amp; Kashmir tours, Himalayan treks, Women-Only trips, Luxury holidays, and North, South, East &amp; West India packages from Srinagar and New Delhi."
+  />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <div id="site-top-shell"></div>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         OPENING N / S / E / W STAGGERED CARDINAL GATEWAY
+         Clicking N, S, E, or W opens its dedicated Regional Zone page!
+         ==================================================================== -->
+    <section class="cardinal-gateway" id="cardinal-gateway" aria-label="Explore India by Cardinal Direction">
+      <!-- Subtle Architectural Compass Rose Watermark -->
+      <svg class="cardinal-gateway__watermark" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+        <circle cx="100" cy="100" r="88" stroke-dasharray="3 4" />
+        <circle cx="100" cy="100" r="64" />
+        <circle cx="100" cy="100" r="14" />
+        <path d="M100 4L109 86L196 100L109 114L100 196L91 114L4 100L91 86Z" />
+        <path d="M100 32L104 96L168 100L104 104L100 168L96 104L32 100L96 96Z" fill="currentColor" fill-opacity="0.18" />
+      </svg>
+
+      <div class="container cardinal-gateway__header">
+        <div>
+          <span class="cardinal-gateway__kicker">Explore India by Direction</span>
+          <h2 class="cardinal-gateway__heading">
+            Four Directions, Endless <em>Wonders</em>
+          </h2>
+        </div>
+        <div class="cardinal-gateway__controls">
+          <span class="cardinal-gateway__hint">
+            Tap <strong>N</strong> · <strong>S</strong> · <strong>E</strong> · <strong>W</strong> to enter zone
+          </span>
+          <button type="button" class="cardinal-replay-btn" id="replay-cardinal-btn" aria-label="Replay slide-in transition">
+            ↻ Replay
+          </button>
+        </div>
+      </div>
+
+      <div class="cardinal-stack">
+        <!-- Row 1: NORTH (Staggered Right — Taj Mahal -> north.html) -->
+        <div class="cardinal-band cardinal-band--right">
+          <div class="cardinal-band__track">
+            <div class="cardinal-band__coord" aria-hidden="true">
+              <span>00° N</span>
+              <span class="cardinal-band__coord-line"></span>
+            </div>
+            <div class="cardinal-dock">
+              <a
+                href="north.html"
+                class="cardinal-tile cardinal-tile--n"
+                id="cardinal-slide-n"
+                aria-label="Open North Zone page"
+              >
+                <span class="cardinal-tile__deg">North</span>
+                <span class="cardinal-tile__letter">N</span>
+                <span class="cardinal-tile__cta">Explore →</span>
+              </a>
+
+              <a
+                href="north.html"
+                class="cardinal-panorama"
+                id="cardinal-pano-n"
+                aria-label="Explore North Zone destinations"
+              >
+                <img
+                  src="assets/images/north-taj.webp"
+                  alt="Taj Mahal in Agra — North India Zone"
+                  class="cardinal-panorama__img"
+                  style="object-position: center 22%;"
+                  fetchpriority="high"
+                />
+                <div class="cardinal-panorama__scrim"></div>
+                <div class="cardinal-panorama__meta">
+                  <span class="cardinal-panorama__zone">North India</span>
+                  <span class="cardinal-panorama__places">Jammu &amp; Kashmir · Ladakh · Agra · Rajasthan</span>
+                </div>
+                <span class="cardinal-panorama__go" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: SOUTH (Staggered Left — Warangal Heritage Arch -> south.html) -->
+        <div class="cardinal-band cardinal-band--left">
+          <div class="cardinal-band__track">
+            <div class="cardinal-dock">
+              <a
+                href="south.html"
+                class="cardinal-tile cardinal-tile--s"
+                id="cardinal-slide-s"
+                aria-label="Open South Zone page"
+              >
+                <span class="cardinal-tile__deg">South</span>
+                <span class="cardinal-tile__letter">S</span>
+                <span class="cardinal-tile__cta">Explore →</span>
+              </a>
+
+              <a
+                href="south.html"
+                class="cardinal-panorama"
+                id="cardinal-pano-s"
+                aria-label="Explore South Zone destinations"
+              >
+                <img
+                  src="assets/images/banner-south-warangal.jpg"
+                  alt="Historic Kakatiya Stone Gateway — South India Zone"
+                  class="cardinal-panorama__img"
+                  style="object-position: center 45%;"
+                  fetchpriority="high"
+                />
+                <div class="cardinal-panorama__scrim"></div>
+                <div class="cardinal-panorama__meta">
+                  <span class="cardinal-panorama__zone">South India</span>
+                  <span class="cardinal-panorama__places">Kerala Backwaters · Goa Coast · Mumbai · Ancient Temples</span>
+                </div>
+                <span class="cardinal-panorama__go" aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div class="cardinal-band__coord" aria-hidden="true">
+              <span class="cardinal-band__coord-line"></span>
+              <span>180° S</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: EAST (Staggered Right — Patratu Valley -> east.html) -->
+        <div class="cardinal-band cardinal-band--right">
+          <div class="cardinal-band__track">
+            <div class="cardinal-band__coord" aria-hidden="true">
+              <span>090° E</span>
+              <span class="cardinal-band__coord-line"></span>
+            </div>
+            <div class="cardinal-dock">
+              <a
+                href="east.html"
+                class="cardinal-tile cardinal-tile--e"
+                id="cardinal-slide-e"
+                aria-label="Open East Zone page"
+              >
+                <span class="cardinal-tile__deg">East</span>
+                <span class="cardinal-tile__letter">E</span>
+                <span class="cardinal-tile__cta">Explore →</span>
+              </a>
+
+              <a
+                href="east.html"
+                class="cardinal-panorama"
+                id="cardinal-pano-e"
+                aria-label="Explore East Zone destinations"
+              >
+                <img
+                  src="assets/images/dest-jharkhand.webp"
+                  alt="Winding forest road in Patratu Valley — East India Zone"
+                  class="cardinal-panorama__img"
+                  style="object-position: center 52%;"
+                />
+                <div class="cardinal-panorama__scrim"></div>
+                <div class="cardinal-panorama__meta">
+                  <span class="cardinal-panorama__zone">East India</span>
+                  <span class="cardinal-panorama__places">West Bengal &amp; Darjeeling · Bodh Gaya · Jharkhand</span>
+                </div>
+                <span class="cardinal-panorama__go" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4: WEST (Staggered Left — Gateway of India -> west.html) -->
+        <div class="cardinal-band cardinal-band--left">
+          <div class="cardinal-band__track">
+            <div class="cardinal-dock">
+              <a
+                href="west.html"
+                class="cardinal-tile cardinal-tile--w"
+                id="cardinal-slide-w"
+                aria-label="Open West Zone page"
+              >
+                <span class="cardinal-tile__deg">West</span>
+                <span class="cardinal-tile__letter">W</span>
+                <span class="cardinal-tile__cta">Explore →</span>
+              </a>
+
+              <a
+                href="west.html"
+                class="cardinal-panorama"
+                id="cardinal-pano-w"
+                aria-label="Explore West Zone destinations"
+              >
+                <img
+                  src="assets/images/banner-west-gateway.jpg"
+                  alt="Gateway of India overlooking the Arabian Sea — West India Zone"
+                  class="cardinal-panorama__img"
+                  style="object-position: center 44%;"
+                />
+                <div class="cardinal-panorama__scrim"></div>
+                <div class="cardinal-panorama__meta">
+                  <span class="cardinal-panorama__zone">West India</span>
+                  <span class="cardinal-panorama__places">Udaipur Lakes · Rann of Kutch &amp; Dwarka · Chhattisgarh</span>
+                </div>
+                <span class="cardinal-panorama__go" aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div class="cardinal-band__coord" aria-hidden="true">
+              <span class="cardinal-band__coord-line"></span>
+              <span>270° W</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container cardinal-gateway__footer">
+        <p class="cardinal-motto">
+          Dignified, Honest &amp; <em>Truthful!</em> — Serving Travelers Since 1997
+        </p>
+        <div class="cardinal-gateway__actions">
+          <a href="offbeat.html" class="btn btn--outline cardinal-gateway__btn" id="gateway-offbeat-btn">
+            Off-Beat Kashmir →
+          </a>
+          <a href="packages.html" class="btn btn--cedar cardinal-gateway__btn" id="gateway-packages-btn">
+            Signature Packages →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         KASHMIR HERO & QUICK TRIP FINDER
+         ==================================================================== -->
+    <section class="hero" aria-label="Welcome to Alhabib Travels">
+      <div class="hero__media">
+        <img
+          src="assets/images/hero-kashmir.jpg"
+          alt="Traditional wooden Shikara gliding across Dal Lake in Srinagar at sunrise with snow-capped Himalayan peaks"
+          class="hero__img"
+          fetchpriority="high"
+        />
+        <div class="hero__scrim"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div>
+            <span class="hero__eyebrow">Originally Founded as YIR Holidays in 1997 · Rebranded 2011</span>
+            <h1 class="hero__title">
+              Dignified, Honest &amp; <em>Truthful</em> Journeys Across Kashmir &amp; India.
+            </h1>
+            <p class="hero__lead">
+              One of Jammu &amp; Kashmir’s most trusted travel houses—operating from Srinagar and New Delhi. Whether you seek serene Dal Lake houseboats, high-altitude Himalayan treks, or curated regional holidays across North, South, East, and West India, our family takes care of yours.
+            </p>
+            <div class="hero__cta-row">
+              <a href="packages.html" class="btn btn--primary" id="hero-explore-packages-btn">
+                Explore Signature Packages
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M13 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="offbeat.html" class="btn btn--outline-light" id="hero-offbeat-btn">
+                Discover Off-Beat Kashmir
+              </a>
+            </div>
+          </div>
+
+          <!-- TripAdvisor Travelers' Choice & Heritage Card -->
+          <aside class="hero__trust-card" aria-label="Awards and Recognition">
+            <span class="hero__trust-label">TripAdvisor Travelers’ Choice Honoree</span>
+            <a
+              href="https://www.tripadvisor.com/Attraction_Review-g297623-d23589960-Reviews-ALHABIB_TRAVELS-Srinagar_Srinagar_District_Kashmir_Jammu_and_Kashmir.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hero__awards"
+              id="tripadvisor-awards-link"
+              title="View Alhabib Travels on TripAdvisor"
+            >
+              <img src="assets/images/ta-2023.png" alt="TripAdvisor Travelers' Choice 2023" class="hero__award-badge" />
+              <img src="assets/images/ta-2024.png" alt="TripAdvisor Travelers' Choice 2024" class="hero__award-badge" />
+              <img src="assets/images/ta-2025.png" alt="TripAdvisor Travelers' Choice 2025" class="hero__award-badge" />
+            </a>
+            <div class="hero__stats">
+              <div>
+                <div class="hero__stat-num">1997</div>
+                <div class="hero__stat-caption">Heritage Roots</div>
+              </div>
+              <div>
+                <div class="hero__stat-num">39+</div>
+                <div class="hero__stat-caption">Tour Itineraries</div>
+              </div>
+              <div>
+                <div class="hero__stat-num">5.0 ★</div>
+                <div class="hero__stat-caption">Google Rated</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Multi-Page Quick Trip Finder -->
+        <form class="quick-finder" id="hero-quick-finder" aria-label="Quick Trip Finder">
+          <div class="quick-finder__field">
+            <label for="finder-destination" class="quick-finder__label">Where or How to Travel</label>
+            <select id="finder-destination" class="quick-finder__select">
+              <option value="Jammu & Kashmir">Jammu &amp; Kashmir Tours</option>
+              <option value="Ladakh">Ladakh &amp; Pangong Tours</option>
+              <option value="trekking">Kashmir Alpine Treks (June – Oct)</option>
+              <option value="women">All-Women Kashmir Special (₹9,500)</option>
+              <option value="offbeat">Off-Beat &amp; Untouched Kashmir</option>
+              <option value="luxury">Luxurious Bespoke Packages</option>
+              <option value="North">North Zone Page (Kashmir, Ladakh, Rajasthan)</option>
+              <option value="South">South Zone Page (Kerala, Goa, Mumbai)</option>
+              <option value="East">East Zone Page (West Bengal, Bihar, Jharkhand)</option>
+              <option value="West">West Zone Page (Udaipur, Gujarat, Chhattisgarh)</option>
+            </select>
+          </div>
+
+          <div class="quick-finder__field">
+            <label for="finder-duration" class="quick-finder__label">Preferred Duration</label>
+            <select id="finder-duration" class="quick-finder__select">
+              <option value="all">Any Duration (3 – 8 Days)</option>
+              <option value="3-4">Short Escape (3 – 4 Days)</option>
+              <option value="5">Classic Holiday (5 Days)</option>
+              <option value="6+">Extended Explorer (6 – 8 Days)</option>
+            </select>
+          </div>
+
+          <div class="quick-finder__field">
+            <label for="finder-style" class="quick-finder__label">Traveler Group</label>
+            <select id="finder-style" class="quick-finder__select">
+              <option value="family">Family &amp; Couples</option>
+              <option value="women">Women-Only Group</option>
+              <option value="adventure">Trekking &amp; Adventure</option>
+              <option value="corporate">Corporate / Luxury Coach</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn--cedar" id="finder-submit-btn">
+            Explore Matching Trips
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SIGNATURE EXPERIENCES SPOTLIGHT (LINKS TO DEDICATED PAGES)
+         ==================================================================== -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Curated Experiences</span>
+            <h2 class="section-title">Crafted for Every Kind of <em>Traveler</em></h2>
+          </div>
+          <a href="packages.html" class="btn btn--outline" id="home-all-packages-btn">
+            View All Packages &amp; Itineraries →
+          </a>
+        </div>
+
+        <div class="destination-grid">
+          <!-- Card 1: Kashmir Trekking -->
+          <article class="dest-card">
+            <div class="dest-card__media">
+              <img src="assets/images/trek-great-lakes.jpg" alt="Kashmir Great Lakes Alpine Trek" class="dest-card__img" loading="lazy" />
+              <span class="dest-card__codes">June – Oct · ₹14,500 – ₹27,000</span>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">Kashmir Himalayan Treks</h3>
+              <p class="dest-card__excerpt">
+                Full-support alpine expeditions to Kashmir Great Lakes, sacred Kounsarnag Lake from Aharbal, and the hanging Kolahoi Glacier—complete with camp gear, pack horses, meals, and transfers.
+              </p>
+              <div class="dest-card__spots">
+                <span class="spot-chip">Great Lakes (6N/7D)</span>
+                <span class="spot-chip">Kounsarnag (3N/4D)</span>
+                <span class="spot-chip">Kolahoi Glacier (5N/6D)</span>
+              </div>
+              <div class="dest-card__footer">
+                <a href="packages.html#trekking" class="link-action" id="home-link-trekking">
+                  Explore Treks →
+                </a>
+                <button type="button" class="btn btn--outline btn--sm" data-enquire-item="Kashmir Trekking Expedition">
+                  Enquire
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Exclusive Women-Only Package -->
+          <article class="dest-card">
+            <div class="dest-card__media">
+              <img src="assets/images/kashmir-shikara.jpg" alt="Exclusive All-Women Kashmir Trip on Dal Lake" class="dest-card__img" loading="lazy" />
+              <span class="dest-card__codes">Special Tariff · ₹9,500 / person</span>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">All-Women Kashmir Special</h3>
+              <p class="dest-card__excerpt">
+                04 Nights / 05 Days curated exclusively for women groups, solo travelers, and mothers &amp; daughters—covering Dal Lake, Downtown Srinagar, Gulmarg, Pahalgam &amp; a Deluxe Houseboat stay.
+              </p>
+              <div class="dest-card__spots">
+                <span class="spot-chip">Save ₹15,500</span>
+                <span class="spot-chip">Breakfast &amp; Dinner</span>
+                <span class="spot-chip">24/7 Safety Support</span>
+              </div>
+              <div class="dest-card__footer">
+                <a href="packages.html#women" class="link-action" id="home-link-women">
+                  Day-Wise Plan →
+                </a>
+                <button type="button" class="btn btn--primary btn--sm" data-enquire-item="All-Women Kashmir Package (04N/05D · ₹9,500)">
+                  Reserve
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Luxury & Off-Beat Kashmir -->
+          <article class="dest-card">
+            <div class="dest-card__media">
+              <img src="assets/images/offbeat-gurez.jpg" alt="Untouched Gurez Valley and Bespoke Luxury Kashmir Journeys" class="dest-card__img" loading="lazy" />
+              <span class="dest-card__codes">Private Coaches · 5-Star Stays</span>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">Off-Beat &amp; Luxury Holidays</h3>
+              <p class="dest-card__excerpt">
+                Venture beyond standard trails to Gurez Valley, Dawar, Tulail, Sinthan Top, and Kokernag—or travel in bespoke luxury with Force Urbania coaches, five-star resorts, and VIP concierge care.
+              </p>
+              <div class="dest-card__spots">
+                <span class="spot-chip">Gurez 5-Day Plan</span>
+                <span class="spot-chip">Force Urbania</span>
+                <span class="spot-chip">VIP Concierge</span>
+              </div>
+              <div class="dest-card__footer">
+                <a href="offbeat.html" class="link-action" id="home-link-offbeat">
+                  Off-Beat Gems →
+                </a>
+                <a href="packages.html#luxury" class="btn btn--outline btn--sm" id="home-link-luxury">
+                  Luxury Tours
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         HERITAGE SNAPSHOT (ABOUT US PREVIEW)
+         ==================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="about-story-grid">
+          <div>
+            <span class="eyebrow">Our Heritage</span>
+            <h2 class="section-title" style="margin-bottom:1.1rem;">
+              A Trusted Name in Kashmir &amp; Indian Hospitality Since <em>1997</em>
+            </h2>
+            <p style="color:var(--text-secondary); margin-bottom:1rem;">
+              Originally founded as <strong>YIR Holidays in 1997</strong> and operating as <strong>Al-Habib Travels since 2011</strong>, our offices in Karanagar (Srinagar) and Okhla (New Delhi) have welcomed thousands of families, women’s groups, pilgrims, and corporate delegations with personal warmth and complete transparency.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:1.35rem;">
+              <a href="about.html" class="btn btn--cedar" id="home-about-btn">
+                Meet Our Story &amp; Team →
+              </a>
+              <a href="contact.html" class="btn btn--outline" id="home-contact-btn">
+                Visit Srinagar &amp; Delhi Desks
+              </a>
+            </div>
+          </div>
+
+          <div class="editorial-panel">
+            <span class="eyebrow" style="margin-bottom:0.4rem;">Why Guests Choose Us</span>
+            <h3 class="editorial-panel__title">Personal Care from Arrival to Departure</h3>
+            <ul class="check-list">
+              <li>
+                <span class="check-list__bullet">✓</span>
+                <div><strong>3× TripAdvisor Travelers’ Choice (2023–2025):</strong> Consistently rated 5.0 stars by verified travelers across India.</div>
+              </li>
+              <li>
+                <span class="check-list__bullet">✓</span>
+                <div><strong>Vetted Drivers &amp; Fleet:</strong> Courteous local drivers, spotless sedans, SUVs, and luxury Force Urbania coaches.</div>
+              </li>
+              <li>
+                <span class="check-list__bullet">✓</span>
+                <div><strong>39+ Curated All-India Itineraries:</strong> Clear pickup/drop routes across North, South, East, and West India—customizable to your pace.</div>
+              </li>
+              <li>
+                <span class="check-list__bullet">✓</span>
+                <div><strong>24/7 Local Support:</strong> Direct coordination from our Srinagar headquarters and New Delhi branch throughout your trip.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         VERIFIED GOOGLE CUSTOMER REVIEWS
+         ==================================================================== -->
+    <section class="section section--sand" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Verified Traveler Stories</span>
+            <h2 class="section-title">What Customers Say <em>About Us</em></h2>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" id="reviews-prev-btn" aria-label="Previous reviews">←</button>
+            <button type="button" class="carousel-btn" id="reviews-next-btn" aria-label="Next reviews">→</button>
+          </div>
+        </div>
+
+        <div class="reviews-track-wrap">
+          <div class="reviews-track" id="reviews-track"></div>
+        </div>
+
+        <!-- Bottom CTA Banner -->
+        <div class="cta-banner" style="margin-top:clamp(2.5rem, 5vw, 4rem);">
+          <div>
+            <span class="eyebrow" style="color:var(--accent-gold-light); margin-bottom:0.4rem;">Ready When You Are</span>
+            <h3 style="font-family:var(--font-display); font-size:clamp(1.75rem, 3.2vw, 2.45rem); line-height:1.12; color:#fff;">
+              Let’s Plan Your Hassle-Free Kashmir or All-India Holiday
+            </h3>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
+            <a href="contact.html" class="btn btn--primary" id="home-cta-inquire">Plan My Trip →</a>
+            <a href="tel:+919971782785" class="btn btn--outline-light" id="home-cta-call">Call +91-9971782785</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-bottom-shell"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

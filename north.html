@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>North Zone Tours — Kashmir, Ladakh &amp; Rajasthan | Alhabib Travels</title>
+  <meta
+    name="description"
+    content="Explore North India with Alhabib Travels: Jammu &amp; Kashmir, Ladakh &amp; Pangong Lake, and Royal Rajasthan multi-day tour itineraries."
+  />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="north">
+  <div id="site-top-shell"></div>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="page-hero__media">
+        <img
+          src="assets/images/north-taj.webp"
+          alt="Taj Mahal in Agra — North Zone India Tours"
+          class="page-hero__img"
+          style="object-position: center 22%;"
+          fetchpriority="high"
+        />
+        <div class="page-hero__scrim"></div>
+      </div>
+      <div class="container page-hero__content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>0° North Zone</span>
+        </div>
+        <h1 class="page-hero__title">North <em>Zone</em></h1>
+        <p class="page-hero__lead">
+          From regal Himalayan mountain ranges and Shivalik foothills to the sacred plains of the Ganga and the golden dunes of the Thar Desert—extending across Delhi, Agra, Rajasthan, Ladakh, and Jammu &amp; Kashmir, the “Heaven on Earth”.
+        </p>
+      </div>
+    </section>
+
+    <!-- Zone Sub-navigation -->
+    <div id="zone-subnav-mount"></div>
+
+    <!-- North Zone Destinations -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">0° North · Regional Destinations</span>
+            <h2 class="section-title">Himalayas, High Passes &amp; <em>Royal Forts</em></h2>
+          </div>
+          <p class="section-subtitle">
+            Explore our flagship North India regions. Click <strong>Full Guide &amp; Routes</strong> on any destination to view detailed sightseeing spots and itineraries.
+          </p>
+        </div>
+
+        <div class="destination-grid" id="destination-grid" data-zone-key="north"></div>
+      </div>
+    </section>
+
+    <!-- Detailed Places You Can Visit -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Destination Highlights</span>
+            <h2 class="section-title">Places You Can <em>Visit</em> in the North</h2>
+          </div>
+        </div>
+
+        <div class="info-grid-3" id="zone-places-breakdown" data-zone-key="north"></div>
+      </div>
+    </section>
+
+    <!-- North Zone Regional Itineraries -->
+    <section class="section" id="zone-tours">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Jammu &amp; Kashmir · Ladakh · Rajasthan</span>
+            <h2 class="section-title">North Zone <em>Itineraries</em></h2>
+          </div>
+          <p class="section-subtitle">
+            Filter all 12 curated North Zone itineraries by tour name, destination, or trip length—or request a tailored multi-city schedule.
+          </p>
+        </div>
+
+        <div class="itinerary-controls itinerary-controls--3col">
+          <input
+            type="search"
+            id="tour-search-input"
+            class="control-input"
+            placeholder="Search North tours or places (e.g. Grand Kashmir, Gulmarg, Pangong, Jaipur, Ranthambore)..."
+            aria-label="Search North Zone itineraries"
+          />
+          <select id="tour-days-select" class="control-select" aria-label="Filter by Number of Days">
+            <option value="all">All Durations (3 – 8 Days)</option>
+            <option value="3-4">03 – 04 Days</option>
+            <option value="5">05 Days</option>
+            <option value="6+">06 – 08 Days</option>
+          </select>
+          <button type="button" class="btn btn--outline" id="tour-reset-btn">Reset</button>
+        </div>
+
+        <div class="tour-table-wrap">
+          <table class="tour-table">
+            <thead>
+              <tr>
+                <th>Tour Name</th>
+                <th>Destination</th>
+                <th>Duration</th>
+                <th>Pick Up / Drop</th>
+                <th>Route &amp; Stay Summary</th>
+                <th style="text-align:right;">Action</th>
+              </tr>
+            </thead>
+            <tbody id="tour-table-body" data-fixed-zone="North"></tbody>
+          </table>
+          <div class="tour-table__pagination">
+            <span id="tour-count-text"></span>
+            <a href="offbeat.html" class="link-action">Explore Off-Beat Kashmir →</a>
+          </div>
+        </div>
+
+        <div class="cta-banner" style="margin-top:clamp(2.5rem, 5vw, 3.75rem);">
+          <div>
+            <span class="eyebrow" style="color:var(--accent-gold-light); margin-bottom:0.35rem;">Custom North India Plans</span>
+            <h3 style="font-family:var(--font-display); font-size:clamp(1.7rem, 3vw, 2.3rem); color:#fff;">
+              Want a Custom Kashmir, Ladakh, or Golden Triangle Itinerary?
+            </h3>
+          </div>
+          <button type="button" class="btn btn--primary" data-enquire-item="Custom North Zone Holiday (Kashmir / Ladakh / Rajasthan)">
+            Customize North Tour →
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-bottom-shell"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
