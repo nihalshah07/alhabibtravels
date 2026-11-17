@@ -1,0 +1,55 @@
+name: Normalize Image Extensions
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-images.yml'
+      - 'assets/images/*.JPEG'
+      - 'assets/images/*.jpeg'
+      - 'assets/images/*.JPG'
+      - 'assets/images/*.PNG'
+      - 'assets/images/*.WEBP'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rename-extensions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Convert JPEG, PNG, and WEBP to lowercase extensions
+        run: |
+          cd assets/images
+          shopt -s nullglob
+
+          for file in *.JPEG *.jpeg *.JPG; do
+            name="${file%.*}"
+            name="${name%.jpg}"
+            git mv -f "$file" "${name}.jpg"
+          done
+
+          for file in *.PNG; do
+            name="${file%.*}"
+            name="${name%.png}"
+            git mv -f "$file" "${name}.png"
+          done
+
+          for file in *.WEBP; do
+            name="${file%.*}"
+            name="${name%.webp}"
+            git mv -f "$file" "${name}.webp"
+          done
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Rename image extensions to lowercase (.jpg, .png, .webp)"
+            git push
+          else
+            echo "All image extensions are already lowercase"
+          fi
